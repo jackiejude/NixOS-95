@@ -48,31 +48,6 @@
       <property name="digital-layout" type="uint" value="3"/>
       <property name="digital-time-font" type="string" value="Sans 12"/>
     </property>
-    <property name="plugin-10" type="string" value="actions"/>
-    <property name="plugin-13" type="string" value="launcher">
-      <property name="show-label" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="brave.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-14" type="string" value="launcher">
-      <property name="show-label" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="signal.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-15" type="string" value="launcher">
-      <property name="show-label" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="obsidian.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-16" type="string" value="launcher">
-      <property name="show-label" type="bool" value="false"/>
-      <property name="items" type="array">
-        <value type="string" value="spotify.desktop"/>
-      </property>
-    </property>
     <property name="plugin-5" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>

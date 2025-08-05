@@ -21,16 +21,18 @@
 ```bash
 NixOS-95/
 ├── default.nix
-├── user-vars.nix
-├── XFCE-retro/
-│   ├── default.nix
-│   └── Dotfiles/
-├── Ressources/
-│   ├── Icons/
-│   ├── Images/
-│   │   └── Wallpapers/
-│   └── Themes/
+├── home.nix
 ├── README.md
+├── user-vars.nix
+├── Ressources
+│   ├── Icons
+│   ├── Images
+│   ├── Showcase
+│   └── Themes
+└── XFCE-retro
+    ├── default.nix
+    └── Dotfiles
+
 ```
 
 </details>

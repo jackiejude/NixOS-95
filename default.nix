@@ -7,6 +7,7 @@ in {
   services.xserver.desktopManager.xfce.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   environment.systemPackages = with pkgs; [
+    home-manager
     xdg-desktop-portal-gtk
     xfce.xfwm4
     xfce.xfce4-panel
@@ -27,6 +28,6 @@ in {
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "delme-HMbackup";
-    users.${username} = import ./home.nix { inherit config pkgs lib username; };
+    users.${username} = import ./home.nix { inherit config pkgs lib; };
   };
 }

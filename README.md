@@ -56,15 +56,35 @@ Some have been lightly edited. Originals were created by [aconfuseddragon](https
 1. **Clone the repository**:
 
 ```bash
-git clone https://github.com/peritia-system/NixOS-95.git NixOS
-cd NixOS
+git clone --depth 1 https://github.com/jackiejude/NixOS-95
 ```
 
 2. **Modify your config to import NixOS-95**:
 
-3. **Build and switch to the system configuration**:
+```nix
+imports = [ ./NixOS-95 ]
+```
 
-4. **Apply user settings with Home Manager**:
+3. Update the users-vars.nix file with your username
+
+```nix
+let
+  username = "jackie";
+in {
+  inherit username;
+}
+```
+
+4. Symlink home.nix
+
+```bash
+mkdir -p ~/.config/home-manager/
+ln -s ~/NixOS-95/home.nix ~/.config/home-manager/home.nix
+```
+
+4. **Build and switch to the system configuration**:
+
+5. **Apply user settings with Home Manager**:
 
 ```bash
 home-manager switch
@@ -85,5 +105,4 @@ Due to how **Home Manager** and XFCE handle theming, changes may not fully apply
 
 * Pixel-style retro desktop with pastel polish
 * Lightweight and XFCE-powered (great for low-spec machines)
-* Flake-based configuration with easy updates
 * Themed with Chicago95 and matching icon set

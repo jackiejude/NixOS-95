@@ -1,10 +1,5 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: let
-  
+{ config, pkgs, lib, ... }:
+let
   chicago95 = pkgs.callPackage ../Ressources/Themes/Chicago95/chicago95.nix {};
   dotfilesPath = ./Dotfiles;
   resourcesPath = ../Ressources;

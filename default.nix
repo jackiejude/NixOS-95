@@ -4,7 +4,7 @@ let
   inherit (userVars) username;
 in {
   imports = [ <home-manager/nixos> ];
-  services.xserver.xfce.enable = true;
+  services.xserver.desktopManager.xfce.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   environment.systemPackages = with pkgs; [
     xdg-desktop-portal-gtk
@@ -27,8 +27,6 @@ in {
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "delme-HMbackup";
-    users.${username} = import ./XFCE-retro {
-      inherit config pkgs;
-    };
+    users.${username} = import ./home.nix { inherit config pkgs lib username; };
   };
 }

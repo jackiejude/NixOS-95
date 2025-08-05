@@ -1,6 +1,9 @@
-# NixOS-95 but only the theme
+# [NixOS-95](https://github.com/Peritia-System/NixOS-95) but only the theme
 
 *Just the theme, no system config*
+
+- Forked from [Peritia-System/NixOS-95](https://github.com/Peritia-System/NixOS-95)
+- See original for full system config
 
 ---
 

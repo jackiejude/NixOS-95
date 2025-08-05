@@ -7,6 +7,9 @@
 
 ---
 
+![Screenshot](Screenshot.png)
+- NixOS-95 and [Obsidian Temple OS](https://github.com/jackiejude/obsidian-temple-os)
+
 ## 🖥️ System Overview
 
 * **OS**: NixOS
